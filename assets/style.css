@@ -1,0 +1,149 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Color Palette
+
+Nightshade - hsl(228, 35%, 27%)
+Nightlight - hsl(228, 35%, 70%)
+Laser - hsl(352, 100%, 70%)
+Mango - hsl(24, 100%, 70%)
+Darko - hsl(0, 49%, 9%)
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+:root {
+  box-sizing: border-box;
+  cursor: default;
+  font: 16px/1.5 'Roboto', sans-serif;
+  text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 84rem;
+  background-color: hsl(228, 35%, 27%);
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav a {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  transition: color 200ms ease;
+}
+
+header nav a:hover {
+  color: hsl(352, 100%, 70%);
+}
+
+main, footer {
+  text-align: center;
+}
+
+section.title {
+  margin-top: 8rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+p.info {
+  margin: 3rem 0;
+  font-size: 0.875rem;
+  color: hsl(228, 35%, 70%);
+}
+
+a.cta {
+  padding: 0.8rem 2.5rem;
+  border-radius: 8px;
+  border: 3px solid hsl(0, 49%, 9%);
+  cursor: pointer;
+  display: inline-block;
+  /*font: 1rem/1.5 'Roboto', sans-serif;*/
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(to bottom, hsl(352, 100%, 70%), hsl(24, 100%, 70%));
+  color: white;
+  transition: color 200ms ease;
+  position: relative;
+  z-index: 100;
+}
+
+a.cta:hover {
+  color: hsl(352, 100%, 70%);
+}
+
+a.cta:before {
+  content: '';
+  border-radius: 5px;
+  background: white;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -100;
+  transition: opacity 200ms ease;
+}
+
+a.cta:hover:before {
+  opacity: 1;
+}
+
+img.logo {
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+}
+
+img.bubbles {
+  width: 108px;
+  height: 7px;
+}
+
+img.heart {
+  width: 12px;
+  height: 12px;
+}
