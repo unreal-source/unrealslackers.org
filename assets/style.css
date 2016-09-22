@@ -32,16 +32,10 @@ Darko - hsl(0, 49%, 9%)
 
 body {
   margin: 0 auto;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   max-width: 84rem;
   background-color: hsl(228, 35%, 27%);
   color: white;
-}
-
-@media screen and (min-width: 30rem) {
-  body {
-    padding: 0 1rem;
-  }
 }
 
 img {
