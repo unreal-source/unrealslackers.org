@@ -32,10 +32,16 @@ Darko - hsl(0, 49%, 9%)
 
 body {
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   max-width: 84rem;
   background-color: hsl(228, 35%, 27%);
   color: white;
+}
+
+@media screen and (min-width: 30rem) {
+  body {
+    padding: 0 1rem;
+  }
 }
 
 img {
@@ -71,12 +77,12 @@ main, footer {
 }
 
 section.title {
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 h1 {
   margin: 0;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -86,6 +92,16 @@ h2 {
   font-weight: 500;
 }
 
+@media screen and (min-width: 30rem) {
+  section.title {
+    margin-top: 8rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
 p.info {
   margin: 3rem 0;
   font-size: 0.875rem;
@@ -93,6 +109,7 @@ p.info {
 }
 
 a.cta {
+  margin-bottom: 4rem;
   padding: 0.8rem 2.5rem;
   border-radius: 8px;
   border: 3px solid hsl(0, 49%, 9%);
