@@ -66,6 +66,16 @@ header nav a:hover {
   color: hsl(352, 100%, 70%);
 }
 
+header nav a.header-cta {
+  background-color: hsl(228, 32%, 16%);
+  color: hsl(24, 100%, 70%);
+  border-radius: 8px;
+}
+
+header nav a.header-cta:hover {
+  color: hsl(352, 100%, 70%);
+}
+
 main, footer {
   text-align: center;
 }
